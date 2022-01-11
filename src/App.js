@@ -7,7 +7,7 @@ import firebase from "firebase/compat/app";
 
 class App extends React.Component {
   componentDidMount() {
-    firebase.initializeApp(firebaseConfig);
+    const fbase = firebase.initializeApp(firebaseConfig);
     const uiConfig = {
       signInSuccessUrl: "https://calculator-qgnbku7zp-suyashmuley.vercel.app/", //This URL is used to return to that page when we got success response for phone authentication.
       signInOptions: [firebase.auth.PhoneAuthProvider.PROVIDER_ID],
