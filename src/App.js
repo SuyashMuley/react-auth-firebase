@@ -3,7 +3,6 @@ import React from 'react';
 import firebaseConfig from './firebaseConfig';
 import * as firebaseui from "firebaseui";
 import firebase from "firebase/compat/app";
-import Home from './Home';
 
 class App extends React.Component {
   componentDidMount() {
